@@ -1,26 +1,19 @@
-require "pry"
 class School
-
-    def initialize(name)
-      @name = name
-      @roster = {}
-    end
-
-    def roster
-      @roster
-    end
-
-    def add_student(name, grade)
-        roster(grade) = name
-    end
-
-    def grade=(grade)
-      @grade = grade
-    end
-
-    def grade
-      @grade
-    end
-binding.pry
+	attr_accessor :roster, :name, :grade 
+	attr_reader :school 
+	
+	def initialize(school)
+    @school = school
+  end
+  
+  def roster
+  	roster = {}
+  end 
+  
+  def add_student(name,grade)
+  	roster[grade] = []
+  	roster[grade] << name
+  		
+  end
 
 end
