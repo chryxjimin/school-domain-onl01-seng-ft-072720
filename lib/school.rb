@@ -11,7 +11,9 @@ class School
     end
 
     def add_student(name, grade)
-
+       @student_name = name
+       @grade = grade
+       roster << [name, grade] 
     end
 
 
@@ -19,7 +21,7 @@ binding.pry
 
 end
 
-school = School.new("Bayside High School")
-school.roster
+#school = School.new("Bayside High School")
+#school.roster
 school.add_student("Zach Morris", 9)
 school.roster
