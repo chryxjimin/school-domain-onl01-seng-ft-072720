@@ -22,9 +22,7 @@ class School
     def grade(level)
       @roster[level]
     end
-#binding.pry
   end
-end
 
 #school = School.new("Bayside High School")
 #school.roster
