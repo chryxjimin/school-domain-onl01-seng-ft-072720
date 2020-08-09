@@ -11,18 +11,14 @@ class School
     end
 
     def add_student(name, grade)
-       @student_name = name
-       @grade = grade
-       roster[grade] = []
-       roster[grade] << name
+        @student_name = name
+        @grade = grade
+      if @roster.include?(grade) == false
+         @roster[grade] = []
+      end
+        @roster[grade] << name
     end
 
-    def grade
-      @grade = grade
-      grade = 9
-      roster[grade] = []
-      roster[grade] << name
-    end
 
 #binding.pry
 
