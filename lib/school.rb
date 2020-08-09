@@ -20,7 +20,7 @@ class School
     def grade
       @grade = grade
       grade = 9
-      roster[grade] << name 
+      roster[grade] << name
     end
 
 #binding.pry
