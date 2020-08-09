@@ -17,6 +17,11 @@ class School
        roster[grade] << name
     end
 
+    def grade
+      @grade = grade
+      grade = 9
+      roster[grade] << name 
+    end
 
 #binding.pry
 
