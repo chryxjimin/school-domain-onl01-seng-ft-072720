@@ -19,8 +19,8 @@ class School
         @roster[grade] << name
     end
 
-    def grade(grade)
-      #@grade =
+    def grade(level)
+      @roster[level]
     end
 
 
@@ -30,5 +30,5 @@ end
 
 #school = School.new("Bayside High School")
 #school.roster
-#school.add_student("Zach Morris", 9)
+school.add_student("Zach Morris", 9)
 #school.roster
