@@ -22,13 +22,11 @@ class School
     def grade(level)
       @roster[level]
     end
-
-
 #binding.pry
-
+  end
 end
 
 #school = School.new("Bayside High School")
 #school.roster
-school.add_student("Zach Morris", 9)
+#school.add_student("Zach Morris", 9)
 #school.roster
