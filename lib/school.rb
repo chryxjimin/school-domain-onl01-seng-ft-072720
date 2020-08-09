@@ -11,10 +11,12 @@ class School
     end
 
     def add_student(name, grade)
-        
+
     end
 
 
 binding.pry
 
 end
+
+school = School.new("Bayside High School")
